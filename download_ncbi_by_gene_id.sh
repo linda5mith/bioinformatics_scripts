@@ -11,7 +11,7 @@ for i in $(cat crass_dna_pol_ids.txt); do
     unzip -d crAss_dna_pols/$i -j  crAss_dna_pols/$i.zip
 done;
 
-rm *.zip
+rm crAss_dna_pols/*.zip
 
 
 
