@@ -13,6 +13,9 @@ done;
 
 rm crAss_dna_pols/*.zip
 
+for i in $(ls *.zip); do
+name=$(echo "$i" | cut -f 1 -d '.')
+unzip $name -d $name
+done;
 
-
-
+find crAss_dna_pols/ -name 'gene.fna' -exec cat {} \; > crAss_dna_pol_genes.fna
